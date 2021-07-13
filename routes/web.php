@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +14,16 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', [MainController::class, 'home']);
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 
-Route::get('/about', [MainController::class, 'about']);
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
-Route::get('/review', [MainController::class, 'review'])->name('review');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
-Route::post('/review/check', [MainController::class, 'review_check']);
-
-//Route::get('/user/{id}/{name}', function ($id, $name) {
-//    return 'ID: ' . $id . ' Name: ' . $name;
-//});
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact-form');

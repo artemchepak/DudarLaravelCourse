@@ -1,9 +1,14 @@
-@extends('layout')
 
-@section('title') Главная страница @endsection
+@extends('layouts.app')
 
-@section('main_content')
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores, culpa iure libero minima nisi omnis
-        quasi reiciendis reprehenderit similique ullam veritatis vitae voluptate. Blanditiis dolor doloremque inventore
-        nostrum officiis!</p>
+@section('title')Main page @endsection
+
+@section('content')
+    <h1>Main page</h1>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem inventore iste quaerat sapiente voluptates! Animi autem odio, quibusdam quos ratione ut. Architecto doloribus esse eum magnam magni officia placeat quo?</span><span>Accusamus ad aliquam aliquid, blanditiis deleniti dolor doloremque earum, itaque magni maiores mollitia nobis numquam obcaecati odio quia quisquam repellat reprehenderit similique sunt veniam veritatis vero voluptate. At, eos, explicabo.</span><span>A nesciunt quisquam similique? Ad ipsa neque nostrum quidem rem! Ab ex exercitationem explicabo, id laudantium minus nam nobis obcaecati pariatur possimus repellendus, sapiente velit voluptatibus! Harum illo velit veritatis!</span></p>
+@endsection
+
+@section('aside')
+    @parent
+    <p>Additional test</p>
 @endsection
