@@ -14,9 +14,13 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
+        app_path('Modules/Contacts/Views'),
     ],
 
+
+//    'paths' => [
+//        resource_path('views'),
+//    ],
     /*
     |--------------------------------------------------------------------------
     | Compiled View Path

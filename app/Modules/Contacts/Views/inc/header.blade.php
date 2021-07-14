@@ -8,6 +8,7 @@
             <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('home')}}">Home</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('about')}}">About us</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('contact')}}">Contacts</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('contact-data')}}">Messages</a>
         </nav>
     </div>
 </header>
